@@ -1,6 +1,9 @@
 body{
-	padding-top: 50px;
+	padding-top: 60px;
 }
 body nav{
 	background-color: #131D3B;
+}
+body nav a{
+	text-align: center;
 }
