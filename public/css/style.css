@@ -4,7 +4,6 @@ body{
 body nav{
 	background-color: #131D3B;
 }
-body nav a{
-	text-align: center;
-	align-content: center;
+.poster{
+	align:left;
 }
