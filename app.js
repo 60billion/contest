@@ -9,6 +9,7 @@ app.engine('html', require('ejs').renderFile);
 
 var AWS = require('aws-sdk');
 AWS.config.region = 'ap-northeast-2';
+app.use(express.static('public'));
 
 var main = require('./router/main')(app);
 app.use('/main',main);
