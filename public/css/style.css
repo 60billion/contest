@@ -3,6 +3,7 @@ body{
 }
 body nav{
 	background-color: #131D3B;
+	border-bottom: 2px solid white;
 }
 .poster{
 	align:left;
