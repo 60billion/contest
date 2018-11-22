@@ -1,9 +1,10 @@
 body{
-	padding-top: 60px;
+	padding-top: 65px;
 }
 body nav{
 	background-color: #131D3B;
 }
 body nav a{
 	text-align: center;
+	align-content: center;
 }
