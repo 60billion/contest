@@ -8,7 +8,7 @@ var AWS = require('aws-sdk');
 AWS.config.region = 'ap-northeast-2';
 
 app.get('/',function(req,res){
-    res.send('Hello World');
+    res.send('Hello World, It will be contest website.');
 });
 
 app.listen(9000,function(){
