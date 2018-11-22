@@ -7,10 +7,12 @@ app.use(bodyparser.json());
 var AWS = require('aws-sdk');
 AWS.config.region = 'ap-northeast-2';
 
-app.get('/',function(req,res){
-    res.render('index.html');
-});
-
+module.exports = function(app)
+{
+     app.get('/',function(req,res){
+        res.render('index.html')
+     });
+}
 app.listen(9000,function(){
     console.log("connected server-port 9000");
 });
