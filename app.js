@@ -4,7 +4,7 @@ var bodyparser = require('body-parser');
 var app = express();
 app.use(bodyparser.json());
 var router = require('./router/main')(app);
-app.use(router);
+app.use('/main',router);
 app.set('views', __dirname + '/views');
 app.set('view engine', 'ejs');
 app.engine('html', require('ejs').renderFile);
