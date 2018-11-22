@@ -12,11 +12,11 @@ AWS.config.region = 'ap-northeast-2';
 app.use(express.static('public'));
 
 var main = require('./router/main')(app);
-app.use('/main',main);
+app.use('/',main);
 
-app.get('/',function(req,res){
-    res.send('HelloWorld');
-});
+// app.get('/',function(req,res){
+//     res.send('HelloWorld');
+// });
 
 app.listen(9000,function(){
     console.log("connected server-port 9000");

@@ -8,7 +8,7 @@ module.exports = function(app)
     app.engine('html', require('ejs').renderFile);
 
     var router = express.Router();
-    router.get('/html',function(req,res){
+    router.get('/',function(req,res){
         res.render('index.html')
      });
 
